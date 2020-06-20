@@ -1,10 +1,10 @@
 <script>
-	export let name;
+	import Navigation from './components/Navigation.svelte';
 </script>
 
+<Navigation />
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Hello from App.svelte</h1>
 </main>
 
 <style type="text/scss">
