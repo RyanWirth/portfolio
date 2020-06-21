@@ -41,6 +41,12 @@ p {
   letter-spacing: -0.7px;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(poppins-bold.woff2) format("woff2"),
