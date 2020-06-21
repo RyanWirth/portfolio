@@ -10,36 +10,29 @@ body {
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
 h1 {
-	font: 90px 'Poppins', Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-style: normal;
+	font: normal bold 90px 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 h2 {
-	font: 50px 'Poppins', Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	font-style: normal;
+	font: normal 600 50px 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 h3 {
-	font: 40px 'Poppins', Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	font-style: normal;
+	font: normal 600 40px 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 h4 {
-	font: 24px 'Poppins', Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	font-style: normal;
+	font: normal 600 24px 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 h5 {
-	font: 18px 'Poppins', Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	font-style: normal;
+	font: normal 600 18px 'Poppins', Arial, Helvetica, sans-serif;
 }
-
 
 @font-face {
 	font-family: 'Poppins';

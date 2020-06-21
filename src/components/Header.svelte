@@ -15,4 +15,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  a {
+    font: normal 600 20px 'Poppins', Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    margin: 0 25px;
+  }
 </style>
