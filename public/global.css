@@ -1,67 +1,68 @@
-html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-	font: normal bold 90px 'Poppins', Arial, Helvetica, sans-serif;
+  font: normal bold 90px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 h2 {
-	font: normal 600 50px 'Poppins', Arial, Helvetica, sans-serif;
+  font: normal 600 50px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 h3 {
-	font: normal 600 40px 'Poppins', Arial, Helvetica, sans-serif;
+  font: normal 600 40px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 h4 {
-	font: normal 600 24px 'Poppins', Arial, Helvetica, sans-serif;
+  font: normal 600 24px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 h5 {
-	font: normal 600 18px 'Poppins', Arial, Helvetica, sans-serif;
+  font: normal 600 18px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url(poppins-bold.woff2) format('woff2'),
-			 url(poppins-bold.woff) format('woff');
-	font-weight: bold;
-	font-style: normal;
+  font-family: "Poppins";
+  src: url(poppins-bold.woff2) format("woff2"),
+    url(poppins-bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url(poppins-semibold.woff2) format('woff2'),
-			 url(poppins-semibold.woff) format('woff');
-	font-weight: 600;
-	font-style: normal;
+  font-family: "Poppins";
+  src: url(poppins-semibold.woff2) format("woff2"),
+    url(poppins-semibold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url(proxima-nova-regular.woff2) format('woff2'),
-			 url(proxima-nova-regular.woff) format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Proxima Nova";
+  src: url(proxima-nova-regular.woff2) format("woff2"),
+    url(proxima-nova-regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
-	src: url(proxima-nova-semibold.woff2) format('woff2'),
-			 url(proxima-nova-semibold.woff) format('woff');
-	font-weight: 600;
-	font-style: normal;
+  font-family: "Proxima Nova";
+  src: url(proxima-nova-semibold.woff2) format("woff2"),
+    url(proxima-nova-semibold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
