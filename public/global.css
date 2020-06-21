@@ -16,7 +16,8 @@ a {
 }
 
 h1 {
-  font: normal bold 90px "Poppins", Arial, Helvetica, sans-serif;
+  font: normal bold 90px/86px "Poppins", Arial, Helvetica, sans-serif;
+  letter-spacing: -4px;
 }
 
 h2 {
@@ -33,6 +34,11 @@ h4 {
 
 h5 {
   font: normal 600 18px "Poppins", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font: normal normal 20px "Proxima Nova", Arial, Helvetica, sans-serif;
+  letter-spacing: -0.7px;
 }
 
 @font-face {
