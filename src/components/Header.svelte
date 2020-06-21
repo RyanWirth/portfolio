@@ -1,4 +1,4 @@
-<div class="navigation">
+<header>
   <a href="/">Logo</a>
   <nav>
     <a href="/">Home</a>
@@ -7,10 +7,10 @@
     <a href="/">Projects</a>
     <a href="/">Contact</a>
   </nav>
-</div>
+</header>
 
 <style type="text/scss">
-  .navigation {
+  header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

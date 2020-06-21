@@ -5,9 +5,70 @@ html, body {
 }
 
 body {
-	color: #333;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+	font: 90px 'Poppins', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+
+h2 {
+	font: 50px 'Poppins', Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+h3 {
+	font: 40px 'Poppins', Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+h4 {
+	font: 24px 'Poppins', Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+h5 {
+	font: 18px 'Poppins', Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(poppins-bold.woff2) format('woff2'),
+			 url(poppins-bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(poppins-semibold.woff2) format('woff2'),
+			 url(poppins-semibold.woff) format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url(proxima-nova-regular.woff2) format('woff2'),
+			 url(proxima-nova-regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url(proxima-nova-semibold.woff2) format('woff2'),
+			 url(proxima-nova-semibold.woff) format('woff');
+	font-weight: 600;
+	font-style: normal;
 }
