@@ -1,17 +1,31 @@
 <style type="text/scss">
+  section {
+    display: flex;
+  }
+
+  article {
+    flex: 1;
+  }
+
+  aside {
+    background: #d0d0d0;
+    flex: 1;
+  }
+
   p {
     font-size: 24px;
     font-weight: 600;
-    line-height: 1.25em;
+    line-height: 30px;
   }
 </style>
 
 <section>
-  <div>
+  <article>
     <h1>Front-End Software Developer</h1>
     <p>
       Hand crafting unique world most beautiful gradients for your personal as
       well as commercial projects. For a low cost of zero dollars and
     </p>
-  </div>
+  </article>
+  <aside>Image</aside>
 </section>

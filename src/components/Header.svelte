@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    position: absolute;
+    width: 100%;
   }
 
   a {
