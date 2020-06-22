@@ -2,24 +2,27 @@
   header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 
     position: absolute;
     margin: 0 auto;
+    padding: 48px 36px;
     left: 0;
     right: 0;
 
-    width: 100%;
     max-width: 1600px;
   }
 
-  nav a {
+  a {
+    margin: 8px 12px;
+    padding: 4px 12px;
+
     font: normal 600 20px "Poppins", Arial, Helvetica, sans-serif;
     letter-spacing: -1px;
-    margin: 0 24px;
   }
 
-  .header__logo {
+  svg {
     width: 108px;
     height: 40px;
   }
@@ -27,7 +30,7 @@
 
 <header>
   <a href="/">
-    <svg class="header__logo">
+    <svg>
       <use xlink:href="/images.svg#icon-logo" />
     </svg>
   </a>
