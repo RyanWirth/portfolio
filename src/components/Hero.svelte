@@ -40,6 +40,15 @@
     margin-right: 24px;
     padding: 0 56px;
   }
+
+  .hero__button--github {
+    width: 70px;
+
+    svg {
+      height: inherit;
+      width: inherit;
+    }
+  }
 </style>
 
 <section>
@@ -51,8 +60,10 @@
     </p>
     <div class="hero__buttons">
       <a class="hero__button hero__button--get-started" href="/">Get Started</a>
-      <a class="hero__button" href="/">
-        <img src="/images/github.svg" alt="GitHub" />
+      <a class="hero__button hero__button--github" href="/">
+        <svg>
+          <use xlink:href="/images.svg#icon-github" />
+        </svg>
       </a>
     </div>
   </article>
