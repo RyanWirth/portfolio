@@ -5,7 +5,12 @@
     justify-content: space-between;
 
     position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
     width: 100%;
+    max-width: 1200px;
   }
 
   a {
