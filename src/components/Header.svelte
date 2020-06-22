@@ -21,7 +21,7 @@
 
   .header__logo {
     width: 108px;
-    height: 38px;
+    height: 40px;
   }
 </style>
 
