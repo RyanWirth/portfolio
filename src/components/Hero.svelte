@@ -45,6 +45,7 @@
     width: 70px;
 
     svg {
+      fill: #d0d0d0;
       height: inherit;
       width: inherit;
     }

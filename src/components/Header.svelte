@@ -13,15 +13,24 @@
     max-width: 1600px;
   }
 
-  a {
+  nav a {
     font: normal 600 20px "Poppins", Arial, Helvetica, sans-serif;
     letter-spacing: -1px;
-    margin: 0 25px;
+    margin: 0 24px;
+  }
+
+  .header__logo {
+    width: 108px;
+    height: 38px;
   }
 </style>
 
 <header>
-  <a href="/">Logo</a>
+  <a href="/">
+    <svg class="header__logo">
+      <use xlink:href="/images.svg#icon-logo" />
+    </svg>
+  </a>
   <nav>
     <a href="/">Home</a>
     <a href="/">Skills</a>
