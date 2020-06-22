@@ -1,6 +1,7 @@
 <style type="text/scss">
   section {
     display: flex;
+    height: 100vh;
   }
 
   article {
@@ -9,6 +10,7 @@
 
   aside {
     background: #d0d0d0;
+    border-bottom-left-radius: 35px;
     flex: 1;
   }
 
@@ -27,5 +29,5 @@
       well as commercial projects. For a low cost of zero dollars and
     </p>
   </article>
-  <aside>Image</aside>
+  <aside />
 </section>
