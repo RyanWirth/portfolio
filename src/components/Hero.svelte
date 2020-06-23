@@ -1,7 +1,9 @@
 <style type="text/scss">
   section {
     display: flex;
+
     height: 100vh;
+    max-height: 1200px;
   }
 
   article {
@@ -21,7 +23,7 @@
   }
 
   h1 {
-    margin: 26vh 0 64px 0;
+    margin: 320px 0 64px 0;
   }
 
   p {
