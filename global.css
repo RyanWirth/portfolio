@@ -61,32 +61,32 @@ p {
 
 @font-face {
   font-family: "Poppins";
-  src: url(poppins-bold.woff2) format("woff2"),
-    url(poppins-bold.woff) format("woff");
+  src: url(/fonts/poppins-bold.woff2) format("woff2"),
+    url(/fonts/poppins-bold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url(poppins-semibold.woff2) format("woff2"),
-    url(poppins-semibold.woff) format("woff");
+  src: url(/fonts/poppins-semibold.woff2) format("woff2"),
+    url(/fonts/poppins-semibold.woff) format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url(proxima-nova-regular.woff2) format("woff2"),
-    url(proxima-nova-regular.woff) format("woff");
+  src: url(/fonts/proxima-nova-regular.woff2) format("woff2"),
+    url(/fonts/proxima-nova-regular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url(proxima-nova-semibold.woff2) format("woff2"),
-    url(proxima-nova-semibold.woff) format("woff");
+  src: url(/fonts/proxima-nova-semibold.woff2) format("woff2"),
+    url(/fonts/proxima-nova-semibold.woff) format("woff");
   font-weight: 600;
   font-style: normal;
 }
