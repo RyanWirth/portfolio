@@ -6,12 +6,20 @@
 
   article {
     flex: 1;
+
+    > * {
+      padding: 0 112px;
+    }
   }
 
   aside {
     flex: 1;
-    background: #d0d0d0;
+    background: #20bf55;
     border-bottom-left-radius: 35px;
+  }
+
+  h1 {
+    margin: 336px 0 56px 0;
   }
 
   p {
