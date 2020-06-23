@@ -7,8 +7,10 @@
   article {
     flex: 48;
 
-    > * {
-      margin: 0 112px;
+    > div {
+      float: right;
+      width: 520px;
+      margin: 0 136px 0 112px;
     }
   }
 
@@ -74,20 +76,24 @@
 
 <section>
   <article>
-    <h1>Front-End Software Developer</h1>
-    <p>
-      Hand crafting unique world most beautiful gradients for your personal as
-      well as commercial projects. For a low cost of zero dollars and
-    </p>
-    <div class="hero__buttons">
-      <a class="hero__button hero__button--get-started" href="/">Get Started</a>
-      <a
-        class="hero__button hero__button--github"
-        href="https://github.com/RyanWirth">
-        <svg>
-          <use xlink:href="/images.svg#icon-github" />
-        </svg>
-      </a>
+    <div>
+      <h1>Front-End Software Developer</h1>
+      <p>
+        Hand crafting unique world most beautiful gradients for your personal as
+        well as commercial projects. For a low cost of zero dollars and
+      </p>
+      <div class="hero__buttons">
+        <a class="hero__button hero__button--get-started" href="/">
+          Get Started
+        </a>
+        <a
+          class="hero__button hero__button--github"
+          href="https://github.com/RyanWirth">
+          <svg>
+            <use xlink:href="/images.svg#icon-github" />
+          </svg>
+        </a>
+      </div>
     </div>
   </article>
   <aside />
