@@ -5,32 +5,36 @@
   }
 
   article {
-    flex: 1;
+    flex: 48;
 
     > * {
-      padding: 0 112px;
+      margin: 0 112px;
     }
   }
 
   aside {
-    flex: 1;
+    flex: 52;
     background: #20bf55;
     border-bottom-left-radius: 35px;
   }
 
   h1 {
-    margin: 336px 0 56px 0;
+    margin-top: 26vh;
   }
 
   p {
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
+
+    margin-top: 64px;
   }
 
   .hero__buttons {
     display: flex;
     flex-direction: row;
+
+    margin-top: 104px;
   }
 
   .hero__button {
@@ -42,7 +46,9 @@
     background: #d0d0d0;
     color: #fff;
 
-    font: normal 600 22px/70px "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 70px;
     letter-spacing: -0.2px;
 
     margin-right: 24px;
