@@ -58,7 +58,7 @@
   </a>
   <nav>
     <a href="/">Skills</a>
-    <a href="/">Work</a>
+    <a href="/">Timeline</a>
     <a href="/">Projects</a>
     <a href="/">Contact</a>
   </nav>
