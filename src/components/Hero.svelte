@@ -21,22 +21,19 @@
   }
 
   h1 {
-    margin-top: 26vh;
+    margin: 26vh 0 64px 0;
   }
 
   p {
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
-
-    margin-top: 64px;
+    margin: 64px 0 104px 0;
   }
 
   .hero__buttons {
     display: flex;
     flex-direction: row;
-
-    margin-top: 104px;
   }
 
   .hero__button {
