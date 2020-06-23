@@ -17,6 +17,11 @@
   a {
     margin: 8px 12px;
     padding: 4px 12px;
+    transition: fill 250ms ease-in-out;
+
+    &:hover {
+      fill: #20bf55;
+    }
   }
 
   svg {
