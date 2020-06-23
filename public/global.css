@@ -36,6 +36,12 @@ h5 {
   font: normal 600 18px "Poppins", Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: #fff;
+  font: normal 600 20px "Poppins", Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+}
+
 p {
   font: normal normal 20px "Proxima Nova", Arial, Helvetica, sans-serif;
   letter-spacing: -0.7px;

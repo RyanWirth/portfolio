@@ -45,9 +45,15 @@
     width: 70px;
 
     svg {
-      fill: #d0d0d0;
       height: inherit;
       width: inherit;
+
+      fill: #d0d0d0;
+      transition: fill 250ms ease-in-out;
+
+      &:hover {
+        fill: #121212;
+      }
     }
   }
 </style>
@@ -61,7 +67,9 @@
     </p>
     <div class="hero__buttons">
       <a class="hero__button hero__button--get-started" href="/">Get Started</a>
-      <a class="hero__button hero__button--github" href="/">
+      <a
+        class="hero__button hero__button--github"
+        href="https://github.com/RyanWirth">
         <svg>
           <use xlink:href="/images.svg#icon-github" />
         </svg>

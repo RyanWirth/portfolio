@@ -29,10 +29,6 @@
     flex-direction: row;
 
     a {
-      color: #fff;
-      font: normal 600 20px "Poppins", Arial, Helvetica, sans-serif;
-      letter-spacing: -1px;
-
       &:after {
         display: block;
         content: "";
