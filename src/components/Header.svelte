@@ -17,14 +17,35 @@
   a {
     margin: 8px 12px;
     padding: 4px 12px;
-
-    font: normal 600 20px "Poppins", Arial, Helvetica, sans-serif;
-    letter-spacing: -1px;
   }
 
   svg {
     width: 108px;
     height: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      color: #fff;
+      font: normal 600 20px "Poppins", Arial, Helvetica, sans-serif;
+      letter-spacing: -1px;
+
+      &:after {
+        display: block;
+        content: "";
+
+        border-bottom: solid 2px #fff;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+      }
+
+      &:hover:after {
+        transform: scaleX(1);
+      }
+    }
   }
 </style>
 
@@ -35,7 +56,6 @@
     </svg>
   </a>
   <nav>
-    <a href="/">Home</a>
     <a href="/">Skills</a>
     <a href="/">Work</a>
     <a href="/">Projects</a>
