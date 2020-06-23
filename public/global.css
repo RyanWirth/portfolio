@@ -16,23 +16,28 @@ a {
 }
 
 h1 {
+  color: #363636;
   font: normal bold 90px/86px "Poppins", Arial, Helvetica, sans-serif;
   letter-spacing: -4px;
 }
 
 h2 {
+  color: #363636;
   font: normal 600 50px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 h3 {
+  color: #363636;
   font: normal 600 40px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 h4 {
+  color: #363636;
   font: normal 600 24px "Poppins", Arial, Helvetica, sans-serif;
 }
 
 h5 {
+  color: #363636;
   font: normal 600 18px "Poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -43,6 +48,7 @@ a {
 }
 
 p {
+  color: #818181;
   font: normal normal 20px "Proxima Nova", Arial, Helvetica, sans-serif;
   letter-spacing: -0.7px;
 }
