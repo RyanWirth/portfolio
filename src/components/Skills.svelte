@@ -1,6 +1,7 @@
 <style type="text/scss">
   section {
-    margin: 224px 0;
+    margin: 224px auto;
+    max-width: 1200px;
   }
 
   h2 {
