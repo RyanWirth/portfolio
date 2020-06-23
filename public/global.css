@@ -35,6 +35,7 @@ h3 {
 h4 {
   color: #363636;
   font: normal 600 24px "Poppins", Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
 }
 
 h5 {
