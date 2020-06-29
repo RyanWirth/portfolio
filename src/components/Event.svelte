@@ -1,3 +1,11 @@
+<script>
+  export let title;
+  export let organization;
+  export let start;
+  export let end;
+  export let description;
+</script>
+
 <style type="text/scss">
   article {
     display: flex;
@@ -16,12 +24,8 @@
     <use xlink:href="/images.svg#timeline-smart" />
   </svg>
   <div class="event__details">
-    <h4>Software Developer Intern</h4>
-    <h6>SMART Technologies &bull; Sep 2017 &mdash; Aug 2018</h6>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla
-      consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor
-      eget vestibulum vulputate.
-    </p>
+    <h4>{title}</h4>
+    <h6>{organization} &bull; {start} &mdash; {end}</h6>
+    <p>{description}</p>
   </div>
 </article>

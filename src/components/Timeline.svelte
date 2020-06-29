@@ -39,9 +39,37 @@
       worry about a note from your doctor or the results from a lab. It’s all
       there for easy reference, right when you need it.
     </p>
-    <Event />
-    <Event />
-    <Event />
-    <Event />
+    <Event
+      title="Software Developer Intern"
+      start="Sep 2017"
+      end="Aug 2018"
+      organization="SMART Technologies"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
+      tortor eget vestibulum vulputate." />
+    <Event
+      title="Front-End Developer Intern"
+      start="May"
+      end="Aug 2019"
+      organization="Mobify"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
+      tortor eget vestibulum vulputate." />
+    <Event
+      title="B.Sc. in Computer Science"
+      start="Sep 2015"
+      end="Apr 2020"
+      organization="University of British Columbia"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
+      tortor eget vestibulum vulputate." />
+    <Event
+      title="Forward-Deployed Engineer"
+      start="Sep 2020"
+      end="Present"
+      organization="Palantir Technologies"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
+      tortor eget vestibulum vulputate." />
   </main>
 </section>
