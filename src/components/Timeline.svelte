@@ -1,5 +1,8 @@
 <script>
   import Event from "./Event.svelte";
+
+  let scrollY = 0;
+  $: progress = 100 * (scrollY / 7000);
 </script>
 
 <style type="text/scss">
@@ -20,15 +23,16 @@
   }
 
   .timeline__track-fill {
-    height: 25%;
     background: #20bf55;
   }
 </style>
 
+<svelte:window bind:scrollY />
+
 <section>
   <aside>
     <div class="timeline__track">
-      <div class="timeline__track-fill" />
+      <div class="timeline__track-fill" style="height: {progress}%" />
     </div>
   </aside>
   <main>
@@ -39,6 +43,7 @@
       worry about a note from your doctor or the results from a lab. It’s all
       there for easy reference, right when you need it.
     </p>
+
     <Event
       title="Software Developer Intern"
       start="Sep 2017"
@@ -47,6 +52,7 @@
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
       tortor eget vestibulum vulputate." />
+
     <Event
       title="Front-End Developer Intern"
       start="May"
@@ -55,6 +61,7 @@
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
       tortor eget vestibulum vulputate." />
+
     <Event
       title="B.Sc. in Computer Science"
       start="Sep 2015"
@@ -63,6 +70,7 @@
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
       tortor eget vestibulum vulputate." />
+
     <Event
       title="Forward-Deployed Engineer"
       start="Sep 2020"
