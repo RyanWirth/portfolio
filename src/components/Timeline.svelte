@@ -1,3 +1,7 @@
+<script>
+  import Event from "./Event.svelte";
+</script>
+
 <style type="text/scss">
   section {
     display: flex;
@@ -7,7 +11,7 @@
   }
 
   aside {
-    margin: 0 104px 0 48px;
+    margin: 0 160px 0 48px;
   }
 
   .timeline__track {
@@ -27,7 +31,7 @@
       <div class="timeline__track-fill" />
     </div>
   </aside>
-  <article>
+  <main>
     <h3>Here's a look at what I've been up to.</h3>
     <p>
       PicnicHealth collects, digitizes, and encrypts all your medical
@@ -35,5 +39,9 @@
       worry about a note from your doctor or the results from a lab. It’s all
       there for easy reference, right when you need it.
     </p>
-  </article>
+    <Event />
+    <Event />
+    <Event />
+    <Event />
+  </main>
 </section>
