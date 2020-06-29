@@ -14,7 +14,17 @@
   }
 
   aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     margin: 0 160px 0 48px;
+  }
+
+  svg {
+    width: 94px;
+    height: 81px;
+    fill: #20bf55;
   }
 
   .timeline__track {
@@ -24,6 +34,7 @@
 
   .timeline__track-fill {
     background: #20bf55;
+    border-radius: 0 0 4px 4px;
   }
 </style>
 
@@ -31,6 +42,9 @@
 
 <section>
   <aside>
+    <svg>
+      <use xlink:href="/images.svg#timeline-top-cap" />
+    </svg>
     <div class="timeline__track">
       <div class="timeline__track-fill" style="height: {progress}%" />
     </div>
