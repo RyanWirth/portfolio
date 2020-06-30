@@ -21,17 +21,18 @@
     align-items: center;
 
     position: absolute;
-    left: -221px;
+    left: -212px;
   }
 
   .event__timestamp-year {
     display: inline-block;
 
     margin-bottom: 30px;
-    padding: 10px 15px;
+    padding: 6px 12px;
 
     background: #093819;
     border-radius: 5px;
+    color: #fff;
   }
 
   .event__timestamp-date {
@@ -40,12 +41,21 @@
     align-items: center;
     justify-content: center;
 
-    width: 105px;
-    height: 105px;
+    width: 85px;
+    height: 85px;
 
     background: #fff;
     border: 10px solid #f3f3f3;
     border-radius: 100%;
+
+    small {
+      font: normal 600 11px "Poppins", Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+    }
+
+    strong {
+      font: normal bold 32px/32px "Poppins", Arial, Helvetica, sans-serif;
+    }
   }
 
   svg {
@@ -56,10 +66,10 @@
 
 <article>
   <div class="event__timestamp">
-    <div class="event__timestamp-year">2017</div>
+    <h5 class="event__timestamp-year">2017</h5>
     <div class="event__timestamp-date">
-      <small>Sep</small>
-      <strong>26</strong>
+      <small>Oct</small>
+      <strong>23</strong>
     </div>
   </div>
   <svg>
