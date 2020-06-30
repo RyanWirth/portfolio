@@ -13,6 +13,8 @@
   $: timestampYear = timestamp.getFullYear();
   $: timestampMonth = timestamp.toLocaleString("default", { month: "short" });
 
+  $: image = organization.replace(" ", "-").toLowerCase();
+
   // `true` if the start and end dates fall in the same year.
   $: sameYear = !end || start.getFullYear() !== end.getFullYear();
 
@@ -108,7 +110,7 @@
     </div>
   </div>
   <svg>
-    <use xlink:href="/images.svg#timeline-smart" />
+    <use xlink:href="/images.svg#timeline-{image}" />
   </svg>
   <div class="event__details">
     <h4>{title}</h4>
