@@ -60,8 +60,8 @@
 
     <Event
       title="Software Developer Intern"
-      start="Sep 2017"
-      end="Aug 2018"
+      start={new Date('Sep 5, 2017')}
+      end={new Date('Aug 28, 2018')}
       organization="SMART Technologies"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
@@ -69,8 +69,8 @@
 
     <Event
       title="Front-End Developer Intern"
-      start="May"
-      end="Aug 2019"
+      start={new Date('May 7, 2019')}
+      end={new Date('Aug 30, 2019')}
       organization="Mobify"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
@@ -78,8 +78,8 @@
 
     <Event
       title="B.Sc. in Computer Science"
-      start="Sep 2015"
-      end="Apr 2020"
+      start={new Date('Sep 5, 2015')}
+      end={new Date('Apr 28, 2020')}
       organization="University of British Columbia"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
@@ -87,8 +87,7 @@
 
     <Event
       title="Forward-Deployed Engineer"
-      start="Sep 2020"
-      end="Present"
+      start={new Date('Sep 14, 2020')}
       organization="Palantir Technologies"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
