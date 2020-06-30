@@ -2,7 +2,7 @@
   import Event from "./Event.svelte";
 
   let scrollY = 0;
-  $: progress = 100 * (scrollY / 7000);
+  $: progress = 100;
 </script>
 
 <style type="text/scss">

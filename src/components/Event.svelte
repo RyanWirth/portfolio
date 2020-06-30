@@ -67,10 +67,10 @@
 
 <article>
   <div class="event__timestamp">
-    <h5 class="event__timestamp-year">2017</h5>
+    <h5 class="event__timestamp-year">{start.getFullYear()}</h5>
     <div class="event__timestamp-date">
-      <small>Oct</small>
-      <strong>23</strong>
+      <small>{start.toLocaleString('default', { month: 'short' })}</small>
+      <strong>{start.getDate()}</strong>
     </div>
   </div>
   <svg>
@@ -78,7 +78,7 @@
   </svg>
   <div class="event__details">
     <h4>{title}</h4>
-    <h6>{organization} &bull; {start} &mdash; {end}</h6>
+    <h6>{organization} &bull; {start} &mdash; {end || 'Present'}</h6>
     <p>{description}</p>
   </div>
 </article>
