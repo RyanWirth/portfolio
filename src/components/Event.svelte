@@ -37,7 +37,7 @@
     align-items: center;
 
     position: relative;
-    margin: 232px 0;
+    margin: 248px 0;
   }
 
   .event__timestamp {
@@ -90,6 +90,10 @@
   svg {
     flex: 0 0 243px;
     margin-right: 128px;
+  }
+
+  h6 {
+    margin-bottom: 8px;
   }
 </style>
 
