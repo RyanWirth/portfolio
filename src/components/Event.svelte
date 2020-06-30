@@ -51,12 +51,17 @@
   }
 
   .event__timestamp-year {
+    display: none;
     margin-bottom: 30px;
     padding: 6px 12px;
 
     background: #093819;
     border-radius: 5px;
     color: #fff;
+
+    &.visible {
+      display: inline-block;
+    }
   }
 
   .event__timestamp-date {
@@ -90,9 +95,7 @@
 
 <article>
   <div class="event__timestamp">
-    <h5
-      class="event__timestamp-year"
-      style="display: {showYearInTimestamp ? 'inline-block' : 'none'}">
+    <h5 class="event__timestamp-year {showYearInTimestamp && 'visible'}">
       {timestampYear}
     </h5>
     <div class="event__timestamp-date">
