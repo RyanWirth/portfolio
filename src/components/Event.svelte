@@ -13,7 +13,7 @@
   $: timestampYear = timestamp.getFullYear();
   $: timestampMonth = timestamp.toLocaleString("default", { month: "short" });
 
-  $: image = organization.replace(" ", "-").toLowerCase();
+  $: image = organization.replace(/ /g, "-").toLowerCase();
 
   // `true` if the start and end dates fall in the same year.
   $: sameYear = !end || start.getFullYear() !== end.getFullYear();
