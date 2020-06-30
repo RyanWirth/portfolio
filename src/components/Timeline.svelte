@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin: 0 160px 0 48px;
+    margin: 0 112px 0 48px;
   }
 
   svg {
