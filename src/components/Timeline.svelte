@@ -79,11 +79,12 @@
     <Event
       title="B.Sc. in Computer Science"
       start={new Date('Sep 5, 2015')}
-      end={new Date('Apr 28, 2020')}
+      end={new Date('Apr 29, 2020')}
       organization="University of British Columbia"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
-      tortor eget vestibulum vulputate." />
+      tortor eget vestibulum vulputate."
+      showStartAsTimestamp={false} />
 
     <Event
       title="Forward-Deployed Engineer"
@@ -92,6 +93,7 @@
       organization="Palantir Technologies"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
-      tortor eget vestibulum vulputate." />
+      tortor eget vestibulum vulputate."
+      showYearInTimestamp={false} />
   </main>
 </section>

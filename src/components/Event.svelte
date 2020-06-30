@@ -5,6 +5,14 @@
   export let end;
   export let description;
 
+  export let showYearInTimestamp = true;
+  export let showStartAsTimestamp = true;
+
+  $: timestamp = showStartAsTimestamp ? start : end;
+  $: timestampDay = timestamp.getDate();
+  $: timestampYear = timestamp.getFullYear();
+  $: timestampMonth = timestamp.toLocaleString("default", { month: "short" });
+
   // `true` if the start and end dates fall in the same year.
   $: sameYear = !end || start.getFullYear() !== end.getFullYear();
 
@@ -43,8 +51,6 @@
   }
 
   .event__timestamp-year {
-    display: inline-block;
-
     margin-bottom: 30px;
     padding: 6px 12px;
 
@@ -84,10 +90,14 @@
 
 <article>
   <div class="event__timestamp">
-    <h5 class="event__timestamp-year">{start.getFullYear()}</h5>
+    <h5
+      class="event__timestamp-year"
+      style="display: {showYearInTimestamp ? 'inline-block' : 'none'}">
+      {timestampYear}
+    </h5>
     <div class="event__timestamp-date">
-      <small>{start.toLocaleString('default', { month: 'short' })}</small>
-      <strong>{start.getDate()}</strong>
+      <small>{timestampMonth}</small>
+      <strong>{timestampDay}</strong>
     </div>
   </div>
   <svg>
