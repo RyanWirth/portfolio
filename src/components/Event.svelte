@@ -89,7 +89,7 @@
     }
   }
 
-  svg {
+  .event__image {
     flex: 0 0 243px;
     margin-right: 128px;
   }
@@ -109,9 +109,11 @@
       <strong>{timestampDay}</strong>
     </div>
   </div>
-  <svg>
-    <use xlink:href="/images.svg#timeline-{image}" />
-  </svg>
+  <div class="event__image">
+    <svg>
+      <use xlink:href="/images.svg#timeline-{image}" />
+    </svg>
+  </div>
   <div class="event__details">
     <h4>{title}</h4>
     <h6>{organization} &bull; {startDate} &mdash; {endDate}</h6>
