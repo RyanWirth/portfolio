@@ -4,6 +4,23 @@
   export let start;
   export let end;
   export let description;
+
+  // `true` if the start and end dates fall in the same year.
+  $: sameYear = !end || start.getFullYear() !== end.getFullYear();
+
+  // eg. "Sep 2020"
+  $: startDate = start.toLocaleString("default", {
+    month: "short",
+    year: sameYear ? "numeric" : undefined
+  });
+
+  // eg. "Oct 2020" or "Present", if the end date is undefined
+  $: endDate = end
+    ? end.toLocaleString("default", {
+        month: "short",
+        year: "numeric"
+      })
+    : "Present";
 </script>
 
 <style type="text/scss">
@@ -12,7 +29,7 @@
     align-items: center;
 
     position: relative;
-    margin: 256px 0;
+    margin: 232px 0;
   }
 
   .event__timestamp {
@@ -78,7 +95,7 @@
   </svg>
   <div class="event__details">
     <h4>{title}</h4>
-    <h6>{organization} &bull; {start} &mdash; {end || 'Present'}</h6>
+    <h6>{organization} &bull; {startDate} &mdash; {endDate}</h6>
     <p>{description}</p>
   </div>
 </article>

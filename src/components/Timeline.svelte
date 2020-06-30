@@ -88,6 +88,7 @@
     <Event
       title="Forward-Deployed Engineer"
       start={new Date('Sep 14, 2020')}
+      end={undefined}
       organization="Palantir Technologies"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
       ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
