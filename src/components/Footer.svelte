@@ -66,6 +66,7 @@
   .footer__copyright {
     color: #fff;
     font-size: 16px;
+    opacity: 75%;
 
     span {
       font: normal bold 16px "Poppins", Arial, Helvetica, sans-serif;
@@ -80,10 +81,17 @@
     letter-spacing: -0.44px;
     margin-top: 16px;
 
+    opacity: 75%;
+    transition: opacity 250ms ease-in-out;
+
     svg {
       width: 20px;
       height: 24px;
       margin-left: 4px;
+    }
+
+    &:hover {
+      opacity: 100%;
     }
   }
 </style>
