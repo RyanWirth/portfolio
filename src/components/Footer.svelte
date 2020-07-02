@@ -41,6 +41,26 @@
     align-items: center;
   }
 
+  .footer__logo {
+    fill: #fff;
+    width: 108px;
+    height: 50px;
+  }
+
+  .footer__buttons {
+    display: flex;
+
+    a {
+      margin: 0 16px;
+
+      svg {
+        fill: #fff;
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
   .footer__copyright {
     color: #fff;
     font-size: 16px;
@@ -80,9 +100,38 @@
     <a class="global__button" href="mailto:ryan@ryanwirth.ca">Say Hello</a>
   </aside>
   <main>
-    <svg>
-      <use xlink:href="/images.svg#icon-logo" />
-    </svg>
+    <a href="https://ryanwirth.ca/">
+      <svg class="footer__logo">
+        <use xlink:href="/images.svg#icon-logo" />
+      </svg>
+    </a>
+    <div class="footer__buttons">
+      <a href="https://github.com/RyanWirth">
+        <svg>
+          <use xlink:href="/images.svg#icon-github" />
+        </svg>
+      </a>
+      <a href="https://github.com/RyanWirth">
+        <svg>
+          <use xlink:href="/images.svg#icon-github" />
+        </svg>
+      </a>
+      <a href="https://github.com/RyanWirth">
+        <svg>
+          <use xlink:href="/images.svg#icon-github" />
+        </svg>
+      </a>
+      <a href="https://github.com/RyanWirth">
+        <svg>
+          <use xlink:href="/images.svg#icon-github" />
+        </svg>
+      </a>
+      <a href="https://github.com/RyanWirth">
+        <svg>
+          <use xlink:href="/images.svg#icon-github" />
+        </svg>
+      </a>
+    </div>
     <p class="footer__copyright">
       Handcrafted by me
       <span>©</span>
