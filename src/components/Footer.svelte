@@ -103,15 +103,25 @@
     <a class="global__button" href="mailto:ryan@ryanwirth.ca">Say Hello</a>
   </aside>
   <main>
-    <a href="https://ryanwirth.ca/">
+    <a href="https://ryanwirth.ca">
       <svg class="footer__logo">
         <use xlink:href="/images.svg#icon-logo" />
       </svg>
     </a>
     <div class="footer__buttons">
-      <a href="https://github.com/RyanWirth">
+      <a href="https://facebook.com/ryankwirth">
         <svg>
-          <use xlink:href="/images.svg#icon-github" />
+          <use xlink:href="/images.svg#icon-facebook" />
+        </svg>
+      </a>
+      <a href="https://instagram.com/ryankwirth">
+        <svg>
+          <use xlink:href="/images.svg#icon-instagram" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/ryankwirth/">
+        <svg>
+          <use xlink:href="/images.svg#icon-linkedin" />
         </svg>
       </a>
       <a href="https://github.com/RyanWirth">
@@ -119,19 +129,9 @@
           <use xlink:href="/images.svg#icon-github" />
         </svg>
       </a>
-      <a href="https://github.com/RyanWirth">
+      <a href="mailto:ryan@ryanwirth.ca">
         <svg>
-          <use xlink:href="/images.svg#icon-github" />
-        </svg>
-      </a>
-      <a href="https://github.com/RyanWirth">
-        <svg>
-          <use xlink:href="/images.svg#icon-github" />
-        </svg>
-      </a>
-      <a href="https://github.com/RyanWirth">
-        <svg>
-          <use xlink:href="/images.svg#icon-github" />
+          <use xlink:href="/images.svg#icon-mail" />
         </svg>
       </a>
     </div>
@@ -140,7 +140,7 @@
       <span>©</span>
       twentytwenty
     </p>
-    <a class="footer__built-with-svelte" href="https://svelte.dev/">
+    <a class="footer__built-with-svelte" href="https://svelte.dev">
       Built with
       <svg>
         <use xlink:href="/images.svg#footer-svelte" />
