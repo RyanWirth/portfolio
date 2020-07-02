@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 32px 0 72px 0;
   }
 
   .footer__logo {
@@ -49,6 +50,7 @@
 
   .footer__buttons {
     display: flex;
+    margin: 48px 0;
 
     a {
       margin: 0 16px;
@@ -76,6 +78,7 @@
 
     font-size: 14px;
     letter-spacing: -0.44px;
+    margin-top: 16px;
 
     svg {
       width: 20px;
