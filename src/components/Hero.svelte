@@ -38,26 +38,9 @@
     flex-direction: row;
   }
 
-  .hero__button {
-    border-radius: 35px;
-    height: 70px;
-  }
-
-  .hero__button--get-started {
-    background: #d0d0d0;
-    color: #fff;
-
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 70px;
-    letter-spacing: -0.2px;
-
-    margin-right: 24px;
-    padding: 0 56px;
-  }
-
   .hero__button--github {
     width: 70px;
+    margin-left: 24px;
 
     svg {
       height: inherit;
@@ -82,11 +65,9 @@
         well as commercial projects. For a low cost of zero dollars and
       </p>
       <div class="hero__buttons">
-        <a class="hero__button hero__button--get-started" href="/">
-          Get Started
-        </a>
+        <a class="global__button global__button--large" href="/">Get Started</a>
         <a
-          class="hero__button hero__button--github"
+          class="global__button hero__button--github"
           href="https://github.com/RyanWirth">
           <svg>
             <use xlink:href="/images.svg#icon-github" />

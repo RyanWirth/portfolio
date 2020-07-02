@@ -70,6 +70,23 @@ p {
   margin: 0;
 }
 
+.global__button {
+  border-radius: 35px;
+  height: 70px;
+}
+
+.global__button--large {
+  background: #d0d0d0;
+  color: #fff;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -0.2px;
+
+  padding: 0 56px;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

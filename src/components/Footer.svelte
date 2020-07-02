@@ -5,6 +5,7 @@
 
   aside {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     margin: 0 auto;
@@ -25,6 +26,7 @@
     }
 
     div {
+      flex: 1;
       margin-left: 40px;
     }
 
@@ -46,7 +48,11 @@
         hear from you!
       </p>
     </div>
-    <a href="mailto:ryan@ryanwirth.ca">Say Hello</a>
+    <a
+      class="global__button global__button--large"
+      href="mailto:ryan@ryanwirth.ca">
+      Say Hello
+    </a>
   </aside>
   <main>World</main>
 </footer>
