@@ -5,7 +5,10 @@
 
   aside {
     display: flex;
+    align-items: center;
+
     margin: 0 auto;
+    padding: 45px 72px;
     transform: translateY(-33%);
 
     width: 100%;
@@ -14,6 +17,20 @@
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 8px 16px rgba(#000, 0.16);
+
+    svg {
+      fill: #363636;
+      width: 80px;
+      height: 80px;
+    }
+
+    div {
+      margin-left: 40px;
+    }
+
+    p {
+      margin-top: 12px;
+    }
   }
 </style>
 
@@ -29,6 +46,7 @@
         hear from you!
       </p>
     </div>
+    <a href="mailto:ryan@ryanwirth.ca">Say Hello</a>
   </aside>
   <main>World</main>
 </footer>
