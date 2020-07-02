@@ -40,7 +40,10 @@
 
   .hero__button--github {
     width: 70px;
+    height: 70px;
+
     margin-left: 24px;
+    border-radius: 100%;
 
     svg {
       height: inherit;
@@ -65,10 +68,8 @@
         well as commercial projects. For a low cost of zero dollars and
       </p>
       <div class="hero__buttons">
-        <a class="global__button global__button--large" href="/">Get Started</a>
-        <a
-          class="global__button hero__button--github"
-          href="https://github.com/RyanWirth">
+        <a class="global__button" href="/">Get Started</a>
+        <a class="hero__button--github" href="https://github.com/RyanWirth">
           <svg>
             <use xlink:href="/images.svg#icon-github" />
           </svg>

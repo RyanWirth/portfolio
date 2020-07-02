@@ -71,12 +71,8 @@ p {
 }
 
 .global__button {
-  border-radius: 35px;
-  height: 70px;
-}
-
-.global__button--large {
   background: #d0d0d0;
+  border-radius: 35px;
   color: #fff;
 
   font-size: 22px;
@@ -84,6 +80,7 @@ p {
   line-height: 70px;
   letter-spacing: -0.2px;
 
+  height: 70px;
   padding: 0 56px;
 }
 

@@ -34,6 +34,35 @@
       margin-top: 12px;
     }
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__copyright {
+    color: #fff;
+    font-size: 16px;
+
+    span {
+      font: normal bold 16px "Poppins", Arial, Helvetica, sans-serif;
+    }
+  }
+
+  .footer__built-with-svelte {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    letter-spacing: -0.44px;
+
+    svg {
+      width: 20px;
+      height: 24px;
+      margin-left: 4px;
+    }
+  }
 </style>
 
 <footer>
@@ -48,11 +77,22 @@
         hear from you!
       </p>
     </div>
-    <a
-      class="global__button global__button--large"
-      href="mailto:ryan@ryanwirth.ca">
-      Say Hello
-    </a>
+    <a class="global__button" href="mailto:ryan@ryanwirth.ca">Say Hello</a>
   </aside>
-  <main>World</main>
+  <main>
+    <svg>
+      <use xlink:href="/images.svg#icon-logo" />
+    </svg>
+    <p class="footer__copyright">
+      Handcrafted by me
+      <span>©</span>
+      twentytwenty
+    </p>
+    <a class="footer__built-with-svelte" href="https://svelte.dev/">
+      Built with
+      <svg>
+        <use xlink:href="/images.svg#footer-svelte" />
+      </svg>
+    </a>
+  </main>
 </footer>
