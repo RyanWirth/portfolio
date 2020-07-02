@@ -12,7 +12,7 @@
     padding: 45px 72px;
     transform: translateY(-33%);
 
-    width: 100%;
+    width: calc(100% - 192px);
     max-width: 1200px;
 
     background: #fff;
@@ -27,7 +27,7 @@
 
     div {
       flex: 1;
-      margin-left: 40px;
+      margin: 0 40px;
     }
 
     p {
