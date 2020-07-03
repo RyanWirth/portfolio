@@ -51,8 +51,9 @@
   }
 
   svg {
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
+    padding: 11px;
 
     background: rgba(255, 204, 50, 0.2);
     border-radius: 35px;
@@ -67,14 +68,9 @@
   <aside />
   <article>
     <main>
-      <h5>Mobile</h5>
-      <h2>Kenko</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla
-        consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor
-        eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet,
-        ac nulla fringilla lectus in.
-      </p>
+      <h5>{type}</h5>
+      <h2>{title}</h2>
+      <p>{description}</p>
     </main>
     <div class="project__cards">
       {#each cards as card}

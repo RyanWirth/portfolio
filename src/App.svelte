@@ -18,5 +18,13 @@
   nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor
   eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac
   nulla fringilla lectus in."
-  cards={[{ icon: 'icon-logo', title: 'Native Mobile', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }, { icon: 'icon-logo', title: 'Cloud Firestore', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }]} />
+  cards={[{ icon: 'icon-github', title: 'Native Mobile', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }, { icon: 'icon-facebook', title: 'Cloud Firestore', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }]} />
+<Project
+  type="Desktop"
+  title="PokemOnline"
+  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
+  nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor
+  eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac
+  nulla fringilla lectus in."
+  cards={[{ icon: 'icon-mail', title: 'Native Mobile', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }, { icon: 'icon-instagram', title: 'Cloud Firestore', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }]} />
 <Footer />
