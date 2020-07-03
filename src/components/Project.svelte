@@ -28,6 +28,10 @@
     }
   }
 
+  h2 {
+    margin-bottom: 8px;
+  }
+
   h5 {
     color: #818181;
     font-size: 18px;
@@ -35,8 +39,16 @@
     text-transform: uppercase;
   }
 
-  p {
-    margin-top: 8px;
+  h4 {
+    margin: 8px 0 4px 0;
+  }
+
+  svg {
+    width: 70px;
+    height: 70px;
+
+    background: rgba(255, 204, 50, 0.2);
+    border-radius: 35px;
   }
 
   .project__cards {
@@ -59,10 +71,12 @@
     </main>
     <div class="project__cards">
       <div class="project__card">
+        <svg />
         <h4>Cloud Firestore</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <div class="project__card">
+        <svg />
         <h4>Cloud Firestore</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
