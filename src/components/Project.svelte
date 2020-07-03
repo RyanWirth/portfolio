@@ -8,17 +8,29 @@
 <style type="text/scss">
   section {
     display: flex;
-    flex-direction: row-reverse;
-
-    margin: 224px 0;
+    margin: 448px 0;
     min-height: 480px;
+
+    &:nth-child(even) {
+      flex-direction: row;
+
+      aside {
+        border-radius: 0 4px 35px 0;
+      }
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      aside {
+        border-radius: 4px 0 0 35px;
+      }
+    }
   }
 
   aside {
     flex: 52;
     background: #20bf55;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 35px;
   }
 
   article {
