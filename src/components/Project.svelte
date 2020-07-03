@@ -1,3 +1,10 @@
+<script>
+  export let type;
+  export let title;
+  export let description;
+  export let cards;
+</script>
+
 <style type="text/scss">
   section {
     display: flex;
@@ -70,16 +77,15 @@
       </p>
     </main>
     <div class="project__cards">
-      <div class="project__card">
-        <svg />
-        <h4>Cloud Firestore</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="project__card">
-        <svg />
-        <h4>Cloud Firestore</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      {#each cards as card}
+        <div class="project__card">
+          <svg>
+            <use xlink:href="/images.svg#{card.icon}" />
+          </svg>
+          <h4>{card.title}</h4>
+          <p>{card.description}</p>
+        </div>
+      {/each}
     </div>
   </article>
 </section>
