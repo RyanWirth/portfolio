@@ -8,9 +8,9 @@
     justify-content: space-between;
     align-items: center;
 
-    margin: 0 auto;
+    margin: 56px auto 0 auto;
     padding: 45px 72px;
-    transform: translateY(-33%);
+    transform: translateY(-56px);
 
     width: calc(100% - 192px);
     max-width: 1200px;
