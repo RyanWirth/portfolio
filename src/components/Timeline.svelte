@@ -1,6 +1,10 @@
 <script>
   import Event from "./Event.svelte";
 
+  export let title;
+  export let description;
+  export let events;
+
   let scrollY = 0;
   $: progress = 100;
 </script>
@@ -50,50 +54,17 @@
     </div>
   </aside>
   <main>
-    <h3>Here's a look at what I've been up to.</h3>
-    <p>
-      PicnicHealth collects, digitizes, and encrypts all your medical
-      records—then arranges everything in one intuitive timeline. No need to
-      worry about a note from your doctor or the results from a lab. It’s all
-      there for easy reference, right when you need it.
-    </p>
-
-    <Event
-      title="Software Developer Intern"
-      start={new Date('Sep 5, 2017')}
-      end={new Date('Aug 28, 2018')}
-      organization="SMART Technologies"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
-      tortor eget vestibulum vulputate." />
-
-    <Event
-      title="Front-End Developer Intern"
-      start={new Date('May 7, 2019')}
-      end={new Date('Aug 30, 2019')}
-      organization="Mobify"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
-      tortor eget vestibulum vulputate." />
-
-    <Event
-      title="B.Sc. in Computer Science"
-      start={new Date('Sep 5, 2015')}
-      end={new Date('Apr 29, 2020')}
-      organization="University of British Columbia"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
-      tortor eget vestibulum vulputate."
-      showStartAsTimestamp={false} />
-
-    <Event
-      title="Forward-Deployed Engineer"
-      start={new Date('Sep 14, 2020')}
-      end={undefined}
-      organization="Palantir Technologies"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-      ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim
-      tortor eget vestibulum vulputate."
-      showYearInTimestamp={false} />
+    <h3>{title}</h3>
+    <p>{description}</p>
+    {#each events as event}
+      <Event
+        title={event.title}
+        start={new Date(event.start)}
+        end={new Date(event.end)}
+        organization={event.organization}
+        description={event.description}
+        showStartAsTimestamp={event.showStartAsTimestamp}
+        showYearInTimestamp={event.showYearInTimestamp} />
+    {/each}
   </main>
 </section>
