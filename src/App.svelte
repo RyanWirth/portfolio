@@ -8,7 +8,13 @@
 </script>
 
 <Header />
-<Hero />
+
+<Hero
+  title="Front-End Software Developer"
+  description="Hand crafting unique world most beautiful gradients for your
+  personal as well as commercial projects. For a low cost of zero dollars
+  and" />
+
 <Skills
   title="Building awesome, one commit at a time.2"
   cards={[

@@ -1,3 +1,8 @@
+<script>
+  export let title;
+  export let description;
+</script>
+
 <style type="text/scss">
   section {
     display: flex;
@@ -62,11 +67,8 @@
 <section>
   <article>
     <div>
-      <h1>Front-End Software Developer</h1>
-      <p>
-        Hand crafting unique world most beautiful gradients for your personal as
-        well as commercial projects. For a low cost of zero dollars and
-      </p>
+      <h1>{title}</h1>
+      <p>{description}</p>
       <div class="hero__buttons">
         <a class="global__button" href="/">Get Started</a>
         <a class="hero__button--github" href="https://github.com/RyanWirth">
