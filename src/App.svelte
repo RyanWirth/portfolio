@@ -9,7 +9,26 @@
 
 <Header />
 <Hero />
-<Skills />
+<Skills
+  title="Building awesome, one commit at a time.2"
+  cards={[
+    {
+      icon: 'icon-web-developer',
+      title: 'Paperwork is out',
+      description: 'Flip through your complete records with the tap of a button.'
+    },
+    {
+      icon: 'icon-web-developer',
+      title: 'A chronology of care',
+      description: 'Keep organized with a timeline of your entire health history.'
+    },
+    {
+      icon: 'icon-web-developer',
+      title: 'You are in control.',
+      description: 'Review and share &mdash; all on your own terms.'
+    }
+  ]} />
+
 <Timeline
   title="Here's a look at what I've been up to."
   description="PicnicHealth collects, digitizes, and encrypts all your medical

@@ -1,7 +1,17 @@
+<script>
+  export let title;
+  export let cards;
+</script>
+
 <style type="text/scss">
   section {
     margin: 224px auto;
     max-width: 1200px;
+  }
+
+  svg {
+    width: 128px;
+    height: 93px;
   }
 
   h2 {
@@ -37,36 +47,19 @@
     margin: 0 16px;
     text-align: center;
   }
-
-  .skills__item--web-developer svg {
-    width: 128px;
-    height: 93px;
-  }
 </style>
 
 <section>
-  <h2>Building awesome, one commit at a time.</h2>
+  <h2>{title}</h2>
   <div class="skills__container">
-    <div class="skills__item skills__item--web-developer">
-      <svg>
-        <use xlink:href="/images.svg#icon-web-developer" />
-      </svg>
-      <h4>Paperwork is out</h4>
-      <p>Flip through your complete records with the tap of a button.</p>
-    </div>
-    <div class="skills__item skills__item--web-developer">
-      <svg>
-        <use xlink:href="/images.svg#icon-web-developer" />
-      </svg>
-      <h4>A chronology of care</h4>
-      <p>Keep organized with a timeline of your entire health history.</p>
-    </div>
-    <div class="skills__item skills__item--web-developer">
-      <svg>
-        <use xlink:href="/images.svg#icon-web-developer" />
-      </svg>
-      <h4>You are in control</h4>
-      <p>Review and share -- all on your own terms.</p>
-    </div>
+    {#each cards as card}
+      <div class="skills__item">
+        <svg>
+          <use xlink:href="/images.svg#{card.icon}" />
+        </svg>
+        <h4>{card.title}</h4>
+        <p>{card.description}</p>
+      </div>
+    {/each}
   </div>
 </section>
