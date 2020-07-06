@@ -47,6 +47,7 @@
       showYearInTimestamp: false
     }
   ]} />
+
 <Project
   type="Mobile"
   title="Kenko"
@@ -66,6 +67,7 @@
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     }
   ]} />
+
 <Project
   type="Desktop"
   title="PokemOnline"
@@ -85,4 +87,31 @@
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     }
   ]} />
-<Footer />
+
+<Footer
+  title="Get in touch."
+  description="Got a question? A feature request for one of my projects? I'd
+  like to hear from you!"
+  action={{ label: 'Say Hello', href: 'mailto:ryan@ryanwirth.ca' }}
+  links={[
+    {
+      icon: 'icon-facebook',
+      href: 'https://facebook.com/ryankwirth'
+    },
+    {
+      icon: 'icon-instagram',
+      href: 'https://instagram.com/ryankwirth'
+    },
+    {
+      icon: 'icon-linkedin',
+      href: 'https://www.linkedin.com/in/ryankwirth/'
+    },
+    {
+      icon: 'icon-github',
+      href: 'https://github.com/RyanWirth'
+    },
+    {
+      icon: 'icon-mail',
+      href: 'mailto:ryan@ryanwirth.ca'
+    }
+  ]} />

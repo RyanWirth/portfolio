@@ -1,3 +1,10 @@
+<script>
+  export let title;
+  export let description;
+  export let action;
+  export let links;
+</script>
+
 <style type="text/scss">
   footer {
     background: #20bf55;
@@ -102,13 +109,10 @@
       <use xlink:href="/images.svg#footer-envelope" />
     </svg>
     <div>
-      <h3>Get in touch.</h3>
-      <p>
-        Got a question? A feature request for one of my projects? I’d like to
-        hear from you!
-      </p>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
-    <a class="global__button" href="mailto:ryan@ryanwirth.ca">Say Hello</a>
+    <a class="global__button" href={action.href}>{action.label}</a>
   </aside>
   <main>
     <a href="https://ryanwirth.ca">
@@ -117,31 +121,13 @@
       </svg>
     </a>
     <div class="footer__buttons">
-      <a href="https://facebook.com/ryankwirth">
-        <svg>
-          <use xlink:href="/images.svg#icon-facebook" />
-        </svg>
-      </a>
-      <a href="https://instagram.com/ryankwirth">
-        <svg>
-          <use xlink:href="/images.svg#icon-instagram" />
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/ryankwirth/">
-        <svg>
-          <use xlink:href="/images.svg#icon-linkedin" />
-        </svg>
-      </a>
-      <a href="https://github.com/RyanWirth">
-        <svg>
-          <use xlink:href="/images.svg#icon-github" />
-        </svg>
-      </a>
-      <a href="mailto:ryan@ryanwirth.ca">
-        <svg>
-          <use xlink:href="/images.svg#icon-mail" />
-        </svg>
-      </a>
+      {#each links as link}
+        <a href={link.href}>
+          <svg>
+            <use xlink:href="/images.svg#{link.icon}" />
+          </svg>
+        </a>
+      {/each}
     </div>
     <p class="footer__copyright">
       Handcrafted by me
