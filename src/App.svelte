@@ -16,7 +16,7 @@
   and" />
 
 <Skills
-  title="Building awesome, one commit at a time.2"
+  title="Building awesome, one commit at a time."
   cards={[
     {
       icon: 'icon-web-developer',
@@ -82,11 +82,13 @@
   nulla fringilla lectus in."
   cards={[
     {
+      color: '#ff6600',
       icon: 'icon-github',
       title: 'Native Mobile',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
+      color: '#0000ff',
       icon: 'icon-facebook',
       title: 'Cloud Firestore',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
@@ -102,11 +104,13 @@
   nulla fringilla lectus in."
   cards={[
     {
+      color: '#20bf55',
       icon: 'icon-mail',
       title: 'Native Mobile',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
+      color: '#20bf55',
       icon: 'icon-instagram',
       title: 'Cloud Firestore',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'

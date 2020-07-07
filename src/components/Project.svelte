@@ -66,8 +66,6 @@
     width: 48px;
     height: 48px;
     padding: 11px;
-
-    background: rgba(255, 204, 50, 0.2);
     border-radius: 35px;
   }
 
@@ -87,7 +85,7 @@
     <div class="project__cards">
       {#each cards as card}
         <div class="project__card">
-          <svg>
+          <svg style="background: {card.color}33">
             <use xlink:href="/images.svg#{card.icon}" />
           </svg>
           <h4>{card.title}</h4>
