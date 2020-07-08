@@ -1,12 +1,32 @@
 <script>
+  import { onMount } from "svelte";
   import Event from "./Event.svelte";
 
   export let title;
   export let description;
   export let events;
 
+  let innerHeight = 0;
+  let progress = 0;
   let scrollY = 0;
-  $: progress = 100;
+  let track = { offsetTop: 0, offsetHeight: 1 };
+
+  $: height = Math.min(Math.max(progress, 0), 100);
+  $: threshold = scrollY + innerHeight * 0.6;
+  $: goal = ((threshold - track.offsetTop) / track.offsetHeight) * 100;
+
+  onMount(() => {
+    let frame;
+
+    (function loop() {
+      frame = requestAnimationFrame(loop);
+      progress += (goal - progress) * 0.2;
+    })();
+
+    return () => {
+      cancelAnimationFrame(frame);
+    };
+  });
 </script>
 
 <style type="text/scss">
@@ -42,15 +62,15 @@
   }
 </style>
 
-<svelte:window bind:scrollY />
+<svelte:window bind:innerHeight bind:scrollY />
 
 <section>
   <aside>
     <svg>
       <use xlink:href="/images.svg#timeline-top-cap" />
     </svg>
-    <div class="timeline__track">
-      <div class="timeline__track-fill" style="height: {progress}%" />
+    <div class="timeline__track" bind:this={track}>
+      <div class="timeline__track-fill" style="height: {height}%" />
     </div>
   </aside>
   <main>
