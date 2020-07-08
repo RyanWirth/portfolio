@@ -3,6 +3,7 @@
   import Hero from "./components/Hero.svelte";
   import Skills from "./components/Skills.svelte";
   import Timeline from "./components/Timeline.svelte";
+  import Projects from "./components/Projects.svelte";
   import Project from "./components/Project.svelte";
   import Footer from "./components/Footer.svelte";
 </script>
@@ -73,47 +74,47 @@
     }
   ]} />
 
-<Project
-  type="Mobile"
-  title="Kenko"
-  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
-  nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor
-  eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac
-  nulla fringilla lectus in."
-  cards={[
+<Projects
+  title="I build a lot of things."
+  description="Here are some of my favourites."
+  projects={[
     {
-      color: '#ff6600',
-      icon: 'icon-github',
-      title: 'Native Mobile',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      type: "Mobile",
+      title: "Kenko",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac nulla fringilla lectus in.",
+      cards: [
+        {
+          color: '#ff6600',
+          icon: 'icon-github',
+          title: 'Native Mobile',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+          color: '#0000ff',
+          icon: 'icon-facebook',
+          title: 'Cloud Firestore',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        }
+      ]
     },
     {
-      color: '#0000ff',
-      icon: 'icon-facebook',
-      title: 'Cloud Firestore',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    }
-  ]} />
-
-<Project
-  type="Desktop"
-  title="PokemOnline"
-  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
-  nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor
-  eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac
-  nulla fringilla lectus in."
-  cards={[
-    {
-      color: '#20bf55',
-      icon: 'icon-mail',
-      title: 'Native Mobile',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    },
-    {
-      color: '#20bf55',
-      icon: 'icon-instagram',
-      title: 'Cloud Firestore',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      type: "Mobile",
+      title: "Kenko",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac nulla fringilla lectus in.",
+      cards: [
+        {
+          color: '#ff6600',
+          icon: 'icon-github',
+          title: 'Native Mobile',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+          color: '#0000ff',
+          icon: 'icon-facebook',
+          title: 'Cloud Firestore',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        }
+      ]
     }
   ]} />
 
