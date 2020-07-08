@@ -39,7 +39,7 @@
     align-items: center;
 
     position: relative;
-    margin: 248px 0;
+    margin: 248px 0 160px 0;
   }
 
   .event__timestamp {

@@ -45,10 +45,17 @@
     margin: 0 112px 0 48px;
   }
 
-  svg {
+  .timeline__top-cap {
     width: 94px;
     height: 81px;
     fill: #20bf55;
+  }
+
+  .timeline__bottom-cap {
+    width: 32px;
+    height: 48px;
+    fill: #20bf55;
+    margin-top: -3px;
   }
 
   .timeline__track {
@@ -66,12 +73,15 @@
 
 <section>
   <aside>
-    <svg>
+    <svg class="timeline__top-cap">
       <use xlink:href="/images.svg#timeline-top-cap" />
     </svg>
     <div class="timeline__track" bind:this={track}>
       <div class="timeline__track-fill" style="height: {height}%" />
     </div>
+    <svg class="timeline__bottom-cap">
+      <use xlink:href="/images.svg#timeline-bottom-cap" />
+    </svg>
   </aside>
   <main>
     <h3>{title}</h3>

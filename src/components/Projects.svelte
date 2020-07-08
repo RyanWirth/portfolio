@@ -8,7 +8,7 @@
 
 <style type="text/scss">
   section {
-    margin-top: 128px;
+    margin-top: 224px;
   }
 
   h2 {
