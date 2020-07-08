@@ -6,9 +6,9 @@
 </script>
 
 <style type="text/scss">
-  section {
+  article {
     display: flex;
-    margin: 448px 0;
+    margin: 144px 0 448px 0;
     min-height: 480px;
 
     &:nth-child(even) {
@@ -33,14 +33,14 @@
     background: #20bf55;
   }
 
-  article {
+  main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     flex: 48;
 
-    > * {
+    > div {
       float: right;
       width: 536px;
       margin: 0 136px 0 112px;
@@ -51,15 +51,15 @@
     margin-bottom: 8px;
   }
 
+  h4 {
+    margin: 8px 0 4px 0;
+  }
+
   h5 {
     color: #818181;
     font-size: 18px;
     letter-spacing: -0.16px;
     text-transform: uppercase;
-  }
-
-  h4 {
-    margin: 8px 0 4px 0;
   }
 
   svg {
@@ -74,17 +74,17 @@
   }
 </style>
 
-<section>
+<article>
   <aside />
-  <article>
-    <main>
+  <main>
+    <div>
       <h5>{type}</h5>
       <h2>{title}</h2>
       <p>{description}</p>
-    </main>
+    </div>
     <div class="project__cards">
       {#each cards as card}
-        <div class="project__card">
+        <div>
           <svg style="background: {card.color}33">
             <use xlink:href="/images.svg#{card.icon}" />
           </svg>
@@ -93,5 +93,5 @@
         </div>
       {/each}
     </div>
-  </article>
-</section>
+  </main>
+</article>
