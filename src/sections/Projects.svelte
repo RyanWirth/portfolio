@@ -1,5 +1,5 @@
 <script>
-  import Project from "./Project.svelte";
+  import Project from "../components/Project.svelte";
 
   export let title;
   export let description;

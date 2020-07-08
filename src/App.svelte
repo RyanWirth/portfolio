@@ -1,11 +1,10 @@
 <script>
-  import Header from "./components/Header.svelte";
-  import Hero from "./components/Hero.svelte";
-  import Skills from "./components/Skills.svelte";
-  import Timeline from "./components/Timeline.svelte";
-  import Projects from "./components/Projects.svelte";
-  import Project from "./components/Project.svelte";
-  import Footer from "./components/Footer.svelte";
+  import Header from "./sections/Header.svelte";
+  import Hero from "./sections/Hero.svelte";
+  import Skills from "./sections/Skills.svelte";
+  import Timeline from "./sections/Timeline.svelte";
+  import Projects from "./sections/Projects.svelte";
+  import Footer from "./sections/Footer.svelte";
 </script>
 
 <Header />

@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import Event from "./Event.svelte";
+  import Event from "../components/Event.svelte";
 
   export let title;
   export let description;
