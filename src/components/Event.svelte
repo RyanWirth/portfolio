@@ -4,6 +4,7 @@
   export let start;
   export let end;
   export let description;
+  export let visibility;
 
   export let showYearInTimestamp = true;
   export let showStartAsTimestamp = true;
@@ -99,7 +100,7 @@
   }
 </style>
 
-<article>
+<article style="opacity: {visibility}">
   <div class="event__timestamp">
     <h5 class="event__timestamp-year {showYearInTimestamp && 'visible'}">
       {timestampYear}
@@ -109,12 +110,12 @@
       <strong>{timestampDay}</strong>
     </div>
   </div>
-  <div class="event__image">
+  <div class="event__image" style="transform: translateX({visibility * 10}%)">
     <svg>
       <use xlink:href="/images.svg#timeline-{image}" />
     </svg>
   </div>
-  <div class="event__details">
+  <div class="event__details" style="transform: translateX({visibility * 10}%)">
     <h4>{title}</h4>
     <h6>{organization} &bull; {startDate} &mdash; {endDate}</h6>
     <p>{description}</p>

@@ -94,7 +94,8 @@
         organization={event.organization}
         description={event.description}
         showStartAsTimestamp={event.showStartAsTimestamp}
-        showYearInTimestamp={event.showYearInTimestamp} />
+        showYearInTimestamp={event.showYearInTimestamp}
+        visibility={Math.random()} />
     {/each}
   </main>
 </section>
