@@ -55,7 +55,7 @@
 
   .timeline__track {
     width: 14px;
-    min-height: 16px;
+    min-height: 40px;
 
     background: #20bf55;
     transition: height 500ms ease-out;
