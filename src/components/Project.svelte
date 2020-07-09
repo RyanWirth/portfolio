@@ -17,6 +17,10 @@
       aside {
         border-radius: 0 4px 35px 0;
       }
+
+      main {
+        align-items: flex-start;
+      }
     }
 
     &:nth-child(odd) {
@@ -24,6 +28,10 @@
 
       aside {
         border-radius: 4px 0 0 35px;
+      }
+
+      main {
+        align-items: flex-end;
       }
     }
   }
