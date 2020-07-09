@@ -56,11 +56,11 @@
   }
 
   h2 {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   h4 {
-    margin: 8px 0 4px 0;
+    margin: 8px 0;
   }
 
   h5 {
