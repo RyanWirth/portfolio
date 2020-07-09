@@ -65,11 +65,11 @@
 <section>
   <aside bind:this={el}>
     <svg class="timeline__top-cap">
-      <use xlink:href="/images.svg#timeline-top-cap" />
+      <use xlink:href="/images/sprites.svg#timeline-top-cap" />
     </svg>
     <div class="timeline__track" style="height: {height}%" />
     <svg class="timeline__bottom-cap">
-      <use xlink:href="/images.svg#timeline-bottom-cap" />
+      <use xlink:href="/images/sprites.svg#timeline-bottom-cap" />
     </svg>
   </aside>
   <main>

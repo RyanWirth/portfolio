@@ -53,7 +53,7 @@
 <header>
   <a href="/">
     <svg>
-      <use xlink:href="/images.svg#icon-logo" />
+      <use xlink:href="/images/sprites.svg#icon-logo" />
     </svg>
   </a>
   <nav>

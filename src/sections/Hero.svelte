@@ -73,7 +73,7 @@
         <a class="global__button" href="/">Get Started</a>
         <a class="hero__button--github" href="https://github.com/RyanWirth">
           <svg>
-            <use xlink:href="/images.svg#icon-github" />
+            <use xlink:href="/images/sprites.svg#icon-github" />
           </svg>
         </a>
       </div>

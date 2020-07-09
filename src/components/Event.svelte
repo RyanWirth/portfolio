@@ -121,7 +121,7 @@
   </div>
   <div class="event__image" style="transform: translateX({translation}%)">
     <svg>
-      <use xlink:href="/images.svg#timeline-{image}" />
+      <use xlink:href="/images/sprites.svg#timeline-{image}" />
     </svg>
   </div>
   <div class="event__details" style="transform: translateX({translation}%)">

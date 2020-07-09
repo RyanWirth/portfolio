@@ -106,7 +106,7 @@
 <footer>
   <aside>
     <svg>
-      <use xlink:href="/images.svg#footer-envelope" />
+      <use xlink:href="/images/sprites.svg#footer-envelope" />
     </svg>
     <div>
       <h3>{title}</h3>
@@ -117,14 +117,14 @@
   <main>
     <a href="https://ryanwirth.ca">
       <svg class="footer__logo">
-        <use xlink:href="/images.svg#icon-logo" />
+        <use xlink:href="/images/sprites.svg#icon-logo" />
       </svg>
     </a>
     <div class="footer__buttons">
       {#each links as link}
         <a href={link.href}>
           <svg>
-            <use xlink:href="/images.svg#{link.icon}" />
+            <use xlink:href="/images/sprites.svg#{link.icon}" />
           </svg>
         </a>
       {/each}
@@ -137,7 +137,7 @@
     <a class="footer__built-with-svelte" href="https://svelte.dev">
       Built with
       <svg>
-        <use xlink:href="/images.svg#footer-svelte" />
+        <use xlink:href="/images/sprites.svg#footer-svelte" />
       </svg>
     </a>
   </main>

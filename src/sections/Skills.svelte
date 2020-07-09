@@ -55,7 +55,7 @@
     {#each cards as card}
       <div class="skills__item">
         <svg>
-          <use xlink:href="/images.svg#{card.icon}" />
+          <use xlink:href="/images/sprites.svg#{card.icon}" />
         </svg>
         <h4>{card.title}</h4>
         <p>{card.description}</p>
