@@ -36,7 +36,7 @@
   ]} />
 
 <Timeline
-  title="Here's a look at what I've been up to."
+  title="Here’s a look at what I’ve been up to."
   description="PicnicHealth collects, digitizes, and encrypts all your medical
   records—then arranges everything in one intuitive timeline. No need to
   worry about a note from your doctor or the results from a lab. It’s all

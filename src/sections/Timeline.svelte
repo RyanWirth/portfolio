@@ -30,6 +30,11 @@
     margin: 0 112px 0 48px;
   }
 
+  h3,
+  p {
+    margin-top: 16px;
+  }
+
   .timeline__top-cap {
     width: 94px;
     height: 81px;
