@@ -4,10 +4,15 @@
   export let start;
   export let end;
   export let description;
-  export let visibility;
+  export let position;
 
   export let showYearInTimestamp = true;
   export let showStartAsTimestamp = true;
+
+  let el = { offsetTop: 0, offsetHeight: 1 };
+  $: progress = (position - el.offsetTop) / el.offsetHeight * 1.5;
+  $: opacity = Math.min(Math.max(progress, 0), 1);
+  $: translation = (1 - opacity) * 10;
 
   $: timestamp = showStartAsTimestamp ? start : end;
   $: timestampDay = timestamp.getDate();
@@ -41,6 +46,11 @@
 
     position: relative;
     margin: 248px 0 160px 0;
+    transition: opacity 500ms ease-out;
+
+    > div {
+      transition: transform 500ms ease-out;
+    }
   }
 
   .event__timestamp {
@@ -100,7 +110,7 @@
   }
 </style>
 
-<article style="opacity: {visibility}">
+<article style="opacity: {opacity}" bind:this={el}>
   <div class="event__timestamp">
     <h5 class="event__timestamp-year {showYearInTimestamp && 'visible'}">
       {timestampYear}
@@ -110,12 +120,12 @@
       <strong>{timestampDay}</strong>
     </div>
   </div>
-  <div class="event__image" style="transform: translateX({visibility * 10}%)">
+  <div class="event__image" style="transform: translateX({translation}%)">
     <svg>
       <use xlink:href="/images.svg#timeline-{image}" />
     </svg>
   </div>
-  <div class="event__details" style="transform: translateX({visibility * 10}%)">
+  <div class="event__details" style="transform: translateX({translation}%)">
     <h4>{title}</h4>
     <h6>{organization} &bull; {startDate} &mdash; {endDate}</h6>
     <p>{description}</p>

@@ -7,10 +7,11 @@
 
   let scrollY = 0;
   let innerHeight = 0;
-  $: position = scrollY + innerHeight * 0.65;
+  $: position = scrollY + innerHeight * 0.7;
 
   let track = { offsetTop: 0, offsetHeight: 1 };
-  $: height = Math.max(0, (position - track.offsetTop) / track.offsetHeight);
+  $: progress = (position - track.offsetTop) / track.offsetHeight;
+  $: height = Math.min(Math.max(progress, 0), 1) * 100;
 </script>
 
 <style type="text/scss">
@@ -52,7 +53,6 @@
     border-radius: 0 0 4px 4px;
 
     min-height: 40px;
-    max-height: 100%;
     transition: height 500ms ease-out;
   }
 </style>
@@ -65,7 +65,7 @@
       <use xlink:href="/images.svg#timeline-top-cap" />
     </svg>
     <div class="timeline__track" bind:this={track}>
-      <div class="timeline__track-fill" style="height: {height * 100}%" />
+      <div class="timeline__track-fill" style="height: {height}%" />
     </div>
     <svg class="timeline__bottom-cap">
       <use xlink:href="/images.svg#timeline-bottom-cap" />
@@ -83,7 +83,7 @@
         description={event.description}
         showStartAsTimestamp={event.showStartAsTimestamp}
         showYearInTimestamp={event.showYearInTimestamp}
-        scrollPosition={position} />
+        {position} />
     {/each}
   </main>
 </section>
