@@ -33,12 +33,9 @@
   });
 
   // eg. "Oct 2020" or "Present", if the end date is undefined
-  $: endDate = end
-    ? end.toLocaleString("default", {
-        month: "short",
-        year: "numeric"
-      })
-    : "Present";
+  $: endDate = isNaN(end)
+    ? "Present"
+    : end.toLocaleString("default", { month: "short", year: "numeric" });
 </script>
 
 <style type="text/scss">
