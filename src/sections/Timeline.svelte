@@ -47,10 +47,8 @@
   .timeline__bottom-cap {
     width: 32px;
     height: 48px;
-    margin-top: -3px;
-
     fill: #20bf55;
-    transition: opacity 500ms ease-out;
+    margin-top: -3px;
   }
 
   .timeline__track {
@@ -58,7 +56,7 @@
     min-height: 40px;
 
     background: #20bf55;
-    transition: height 500ms ease-out;
+    transition: height 500ms ease-in-out;
   }
 </style>
 

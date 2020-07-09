@@ -45,10 +45,10 @@
 
     position: relative;
     margin: 248px 0 160px 0;
-    transition: opacity 500ms ease-out;
+    transition: opacity 500ms ease-in-out;
 
     > div {
-      transition: transform 500ms ease-out;
+      transition: transform 500ms ease-in-out;
     }
   }
 
