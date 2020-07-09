@@ -4,13 +4,15 @@
   export let start;
   export let end;
   export let description;
-  export let position;
 
   export let showYearInTimestamp = true;
   export let showStartAsTimestamp = true;
 
+  export let innerHeight;
+  export let position;
+
   let el = { offsetTop: 0, offsetHeight: 1 };
-  $: progress = (position - el.offsetTop) / el.offsetHeight * 1.5;
+  $: progress = (position - el.offsetTop + innerHeight * 0.2) / el.offsetHeight;
   $: opacity = Math.min(Math.max(progress, 0), 1);
   $: translation = (1 - opacity) * 10;
 

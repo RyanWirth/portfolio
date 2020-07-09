@@ -7,10 +7,10 @@
 
   let scrollY = 0;
   let innerHeight = 0;
-  $: position = scrollY + innerHeight * 0.7;
+  $: position = scrollY + innerHeight * 0.65;
 
-  let track = { offsetTop: 0, offsetHeight: 1 };
-  $: progress = (position - track.offsetTop) / track.offsetHeight;
+  let el = { offsetTop: 0, offsetHeight: 1 };
+  $: progress = (position - el.offsetTop) / el.offsetHeight;
   $: height = Math.min(Math.max(progress, 0), 1) * 100;
 </script>
 
@@ -39,20 +39,17 @@
   .timeline__bottom-cap {
     width: 32px;
     height: 48px;
-    fill: #20bf55;
     margin-top: -3px;
+
+    fill: #20bf55;
+    transition: opacity 500ms ease-out;
   }
 
   .timeline__track {
     width: 14px;
-    height: 100%;
-  }
+    min-height: 8px;
 
-  .timeline__track-fill {
     background: #20bf55;
-    border-radius: 0 0 4px 4px;
-
-    min-height: 40px;
     transition: height 500ms ease-out;
   }
 </style>
@@ -60,13 +57,11 @@
 <svelte:window bind:innerHeight bind:scrollY />
 
 <section>
-  <aside>
+  <aside bind:this={el}>
     <svg class="timeline__top-cap">
       <use xlink:href="/images.svg#timeline-top-cap" />
     </svg>
-    <div class="timeline__track" bind:this={track}>
-      <div class="timeline__track-fill" style="height: {height}%" />
-    </div>
+    <div class="timeline__track" style="height: {height}%" />
     <svg class="timeline__bottom-cap">
       <use xlink:href="/images.svg#timeline-bottom-cap" />
     </svg>
@@ -83,6 +78,7 @@
         description={event.description}
         showStartAsTimestamp={event.showStartAsTimestamp}
         showYearInTimestamp={event.showYearInTimestamp}
+        {innerHeight}
         {position} />
     {/each}
   </main>
