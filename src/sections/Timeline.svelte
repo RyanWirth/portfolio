@@ -30,9 +30,12 @@
     margin: 0 112px 0 48px;
   }
 
-  h3,
-  p {
+  main {
     margin-top: 16px;
+  }
+
+  p {
+    margin: 16px 0 -32px 0;
   }
 
   .timeline__top-cap {
@@ -52,7 +55,7 @@
 
   .timeline__track {
     width: 14px;
-    min-height: 8px;
+    min-height: 16px;
 
     background: #20bf55;
     transition: height 500ms ease-out;

@@ -66,7 +66,7 @@
   }
 
   .event__timestamp-year {
-    display: none;
+    display: inline-block;
     margin-bottom: 30px;
     padding: 6px 12px;
 
@@ -74,8 +74,8 @@
     border-radius: 5px;
     color: #fff;
 
-    &.visible {
-      display: inline-block;
+    &.hidden {
+      visibility: hidden;
     }
   }
 
@@ -114,7 +114,7 @@
 
 <article style="opacity: {opacity}" bind:this={el}>
   <div class="event__timestamp">
-    <h5 class="event__timestamp-year {showYearInTimestamp && 'visible'}">
+    <h5 class="event__timestamp-year" class:hidden={!showYearInTimestamp}>
       {timestampYear}
     </h5>
     <div class="event__timestamp-date">
