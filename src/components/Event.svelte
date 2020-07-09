@@ -82,8 +82,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 88px;
-    height: 88px;
+    width: 85px;
+    height: 85px;
 
     background: #fff;
     border: 10px solid #f3f3f3;
