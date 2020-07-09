@@ -78,7 +78,7 @@
   description="Here are some of my favourites."
   projects={[
     {
-      type: "Mobile",
+      type: "iOS",
       title: "Kenko",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac nulla fringilla lectus in.",
       cards: [
@@ -97,7 +97,7 @@
       ]
     },
     {
-      type: "Mobile",
+      type: "ANDROID",
       title: "Kenko",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla consequat, fringilla lectus in, blandit tortor. Aliquam dignissim tortor eget vestibulum vulputate. Amsterdam consequat blandit dolor sit amet, ac nulla fringilla lectus in.",
       cards: [

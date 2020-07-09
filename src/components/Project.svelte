@@ -67,7 +67,6 @@
     color: #818181;
     font-size: 18px;
     letter-spacing: -0.16px;
-    text-transform: uppercase;
   }
 
   svg {
