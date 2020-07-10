@@ -1,4 +1,6 @@
 <script>
+  import Device from "./Device.svelte";
+
   export let type;
   export let title;
   export let description;
@@ -37,6 +39,7 @@
   }
 
   aside {
+    position: relative;
     flex: 52;
     background: #20bf55;
   }
@@ -82,7 +85,9 @@
 </style>
 
 <article>
-  <aside />
+  <aside>
+    <Device />
+  </aside>
   <main>
     <div>
       <h5>{type}</h5>
